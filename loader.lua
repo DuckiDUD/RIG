@@ -34,7 +34,7 @@ UISTR.Color = Color3.fromRGB(255, 57, 57)
 
 --Properties:
 
-ScreenGui.Parent = game.CoreGui
+ScreenGui.Parent = game.Players.LocalPlayer.PlayerGui
 ScreenGui.DisplayOrder = math.huge
 ScreenGui.IgnoreGuiInset = true
 Frame.Parent = ScreenGui
