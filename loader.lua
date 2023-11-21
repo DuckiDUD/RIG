@@ -34,7 +34,7 @@ UISTR.Color = Color3.fromRGB(255, 57, 57)
 
 --Properties:
 
-ScreenGui.Parent = game.Players.LocalPlayer.PlayerGui
+ScreenGui.Parent = game.CoreGui
 ScreenGui.DisplayOrder = math.huge
 ScreenGui.IgnoreGuiInset = true
 Frame.Parent = ScreenGui
@@ -55,7 +55,6 @@ Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame_2.BorderSizePixel = 0
 Frame_2.Position = UDim2.new(0.5, 0, 0.5, 0)
 Frame_2.Size = UDim2.new(0, 200, 0, 200)
-Frame_2.ZIndex = 2
 
 UICorner.CornerRadius = UDim.new(0, 10)
 UICorner.Parent = Frame_2
@@ -70,7 +69,6 @@ CIRCLE.BorderColor3 = Color3.fromRGB(0, 0, 0)
 CIRCLE.BorderSizePixel = 0
 CIRCLE.Position = UDim2.new(0.5, 0, 0.5, 0)
 CIRCLE.Size = UDim2.new(0, 50, 0, 50)
-CIRCLE.ZIndex = 4
 
 UICorner_2.CornerRadius = UDim.new(1, 0)
 UICorner_2.Parent = CIRCLE
@@ -94,7 +92,6 @@ Line.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Line.BorderSizePixel = 0
 Line.Position = UDim2.new(0.5, 0, 0.5, 0)
 Line.Size = UDim2.new(0, 6, 0, 70)
-Line.ZIndex = 3
 
 Ball.Name = "Ball"
 Ball.Parent = Line
@@ -104,7 +101,6 @@ Ball.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Ball.BorderSizePixel = 0
 Ball.Position = UDim2.new(0.5, 0, 0, 0)
 Ball.Size = UDim2.new(0, 30, 0, 30)
-Ball.ZIndex = 3
 
 UICorner_3.CornerRadius = UDim.new(1, 0)
 UICorner_3.Parent = Ball
@@ -128,7 +124,6 @@ Line_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Line_2.BorderSizePixel = 0
 Line_2.Position = UDim2.new(0.5, 0, 0.5, 0)
 Line_2.Size = UDim2.new(0, 6, 0, 70)
-Line_2.ZIndex = 3
 
 Ball_2.Name = "Ball"
 Ball_2.Parent = Line_2
@@ -138,7 +133,6 @@ Ball_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Ball_2.BorderSizePixel = 0
 Ball_2.Position = UDim2.new(0.5, 0, 0, 0)
 Ball_2.Size = UDim2.new(0, 30, 0, 30)
-Ball_2.ZIndex = 3
 
 UICorner_4.CornerRadius = UDim.new(1, 0)
 UICorner_4.Parent = Ball_2
@@ -162,7 +156,6 @@ Line_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Line_3.BorderSizePixel = 0
 Line_3.Position = UDim2.new(0.5, 0, 0.5, 0)
 Line_3.Size = UDim2.new(0, 6, 0, 60)
-Line_3.ZIndex = 3
 
 Ball_3.Name = "Ball"
 Ball_3.Parent = Line_3
@@ -172,7 +165,6 @@ Ball_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Ball_3.BorderSizePixel = 0
 Ball_3.Position = UDim2.new(0.5, 0, 0, 0)
 Ball_3.Size = UDim2.new(0, 20, 0, 20)
-Ball_3.ZIndex = 3
 
 UICorner_5.CornerRadius = UDim.new(0, 10)
 UICorner_5.Parent = Ball_3
@@ -196,7 +188,6 @@ Line_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Line_4.BorderSizePixel = 0
 Line_4.Position = UDim2.new(0.5, 0, 0.5, 0)
 Line_4.Size = UDim2.new(0, 6, 0, 70)
-Line_4.ZIndex = 3
 
 Ball_4.Name = "Ball"
 Ball_4.Parent = Line_4
@@ -206,7 +197,6 @@ Ball_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Ball_4.BorderSizePixel = 0
 Ball_4.Position = UDim2.new(0.5, 0, 0, 0)
 Ball_4.Size = UDim2.new(0, 30, 0, 30)
-Ball_4.ZIndex = 3
 
 UICorner_6.CornerRadius = UDim.new(1, 0)
 UICorner_6.Parent = Ball_4
