@@ -10,7 +10,9 @@ local Frame_2 = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local UIGradient_2 = Instance.new("UIGradient")
 local CIRCLE = Instance.new("Frame")
+local CIRCLE_2 = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
+local UICorner_UK = Instance.new("UICorner")
 local c1 = Instance.new("Frame")
 local Line = Instance.new("Frame")
 local Ball = Instance.new("Frame")
@@ -44,6 +46,7 @@ Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
 Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.ClipsDescendants = true
 
 UIGradient.Color = ColorSequence.new({ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 34, 34)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 94, 94))})
 UIGradient.Parent = Frame
@@ -69,6 +72,19 @@ CIRCLE.BorderColor3 = Color3.fromRGB(0, 0, 0)
 CIRCLE.BorderSizePixel = 0
 CIRCLE.Position = UDim2.new(0.5, 0, 0.5, 0)
 CIRCLE.Size = UDim2.new(0, 50, 0, 50)
+
+CIRCLE_2.Name = "CIRCLE"
+CIRCLE_2.Parent = CIRCLE
+CIRCLE_2.AnchorPoint = Vector2.new(0.5, 0.5)
+CIRCLE_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CIRCLE_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CIRCLE_2.BorderSizePixel = 0
+CIRCLE_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+CIRCLE_2.ZIndex = 999
+CIRCLE_2.Size = UDim2.new(0, 50, 0, 50)
+
+UICorner_UK.CornerRadius = UDim.new(1, 0)
+UICorner_UK.Parent = CIRCLE_2
 
 UICorner_2.CornerRadius = UDim.new(1, 0)
 UICorner_2.Parent = CIRCLE
