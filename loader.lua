@@ -37,7 +37,7 @@ UISTR.Thickness = 6
 UISTR.Color = Color3.fromRGB(255, 57, 57)
 
 --Properties:
-
+--this did not commit
 ScreenGui.Parent = game.CoreGui
 ScreenGui.IgnoreGuiInset = true
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
