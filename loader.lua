@@ -30,7 +30,7 @@ local UICorner_6 = Instance.new("UICorner")
 
 --Properties:
 
-ScreenGui.Parent = game.ScreenGui
+ScreenGui.Parent = game.Players.LocalPlayer.PlayerGui
 ScreenGui.IgnoreGuiInset = true
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
