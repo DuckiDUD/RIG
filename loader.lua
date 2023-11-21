@@ -38,7 +38,7 @@ UISTR.Color = Color3.fromRGB(255, 57, 57)
 
 --Properties:
 
-ScreenGui.Parent = game.StarterGCoreGui
+ScreenGui.Parent = game.CoreGui
 ScreenGui.IgnoreGuiInset = true
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
