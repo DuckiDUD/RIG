@@ -38,6 +38,8 @@ ScreenGui.Parent = game.CoreGui
 ScreenGui.DisplayOrder = math.huge
 ScreenGui.IgnoreGuiInset = true
 Frame.Parent = ScreenGui
+Frame.AnchorPoint = Vector2.new(0.5,0.5)
+Frame.Position = UDim2.new(0.5,0,0.5,0)
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
@@ -277,5 +279,7 @@ for i = 1,4 do
 	game.TweenService:Create(cir:FindFirstChild("c"..i),TweenInfo.new(3,Enum.EasingStyle.Quint,Enum.EasingDirection.InOut,0,false,0),{Rotation = 360*i-180+sts[i]}):Play()
 end
 
+wait(3.1)
+game.TweenService:Create(Frame,TweenInfo.new(3,Enum.EasingStyle.Quint,Enum.EasingDirection.InOut,0,false,0),{size = UDim2.new(1,0,0,0)}):Play()
 wait(3)
 ScreenGui:Destroy()
