@@ -4,6 +4,7 @@
 -- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
+local Frame_c = Instance.new("CanvasGroup")
 local Frame = Instance.new("Frame")
 local UIGradient = Instance.new("UIGradient")
 local Frame_2 = Instance.new("Frame")
@@ -36,18 +37,24 @@ UISTR.Color = Color3.fromRGB(255, 57, 57)
 
 --Properties:
 
-ScreenGui.Parent = game.CoreGui
-ScreenGui.DisplayOrder = math.huge
+ScreenGui.Parent = game.Players.LocalPlayer.PlayerGui
 ScreenGui.IgnoreGuiInset = true
-Frame.Parent = ScreenGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame_c.Parent = ScreenGui
+Frame_c.AnchorPoint = Vector2.new(0.5,0.5)
+Frame_c.Position = UDim2.new(0.5,0,0.5,0)
+Frame_c.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_c.BorderSizePixel = 0
+Frame_c.Size = UDim2.new(1,0,1,0)
+
+Frame.Parent = Frame_c
 Frame.AnchorPoint = Vector2.new(0.5,0.5)
 Frame.Position = UDim2.new(0.5,0,0.5,0)
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame.BorderSizePixel = 0
 Frame.Size = UDim2.new(1, 0, 1, 0)
-Frame.ClipsDescendants = true
-Frame.ZIndex = 999
+Frame.BorderSizePixel = 0
 
 UIGradient.Color = ColorSequence.new({ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 34, 34)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 94, 94))})
 UIGradient.Parent = Frame
@@ -59,6 +66,7 @@ Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame_2.BorderSizePixel = 0
 Frame_2.Position = UDim2.new(0.5, 0, 0.5, 0)
 Frame_2.Size = UDim2.new(0, 200, 0, 200)
+Frame_2.ZIndex = 2
 
 UICorner.CornerRadius = UDim.new(0, 10)
 UICorner.Parent = Frame_2
@@ -287,6 +295,6 @@ for i = 1,4 do
 end
 
 wait(3.1)
-game.TweenService:Create(Frame,TweenInfo.new(3,Enum.EasingStyle.Quint,Enum.EasingDirection.InOut,0,false,0),{Size = UDim2.new(1,0,0,0)}):Play()
+game.TweenService:Create(Frame_c,TweenInfo.new(3,Enum.EasingStyle.Quint,Enum.EasingDirection.InOut,0,false,0),{Size = UDim2.new(1,0,0,0)}):Play()
 wait(3)
 ScreenGui:Destroy()
