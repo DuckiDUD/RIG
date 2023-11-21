@@ -4,8 +4,6 @@
 -- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
-ScreenGui.IgnoreGuiInset = false
-
 local Frame = Instance.new("Frame")
 local UIGradient = Instance.new("UIGradient")
 local Frame_2 = Instance.new("Frame")
