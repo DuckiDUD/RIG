@@ -37,8 +37,8 @@ UISTR.Thickness = 6
 UISTR.Color = Color3.fromRGB(255, 57, 57)
 
 --Properties:
---this did not commit
-ScreenGui.Parent = game.CoreGui
+
+ScreenGui.Parent = game.StarterGui
 ScreenGui.IgnoreGuiInset = true
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
@@ -95,7 +95,6 @@ CIRCLE_2.BorderSizePixel = 0
 CIRCLE_2.Position = UDim2.new(0.5, 0, 0.5, 0)
 CIRCLE_2.ZIndex = 999
 CIRCLE_2.Size = UDim2.new(0, 50, 0, 50)
-CIRCLE_2.Visible = false
 
 UICorner_UK.CornerRadius = UDim.new(1, 0)
 UICorner_UK.Parent = CIRCLE_2
@@ -273,7 +272,6 @@ local tweenDataForBalls = {
 game.TweenService:Create(cir.Parent,TweenInfo.new(0.9,Enum.EasingStyle.Quart,Enum.EasingDirection.Out,0,false,0),{Size = UDim2.new(0,200,0,200)}):Play()
 
 wait(1)
-CIRCLE_2.Visible = true
 cir.BackgroundTransparency = 0
 game.TweenService:Create(cir.UIStroke,TweenInfo.new(0.6,Enum.EasingStyle.Back,Enum.EasingDirection.Out,0,false,0),{Thickness = 6}):Play()
 task.wait(0.6)
@@ -301,6 +299,6 @@ for i = 1,4 do
 end
 
 wait(3.1)
-game.TweenService:Create(Frame_c,TweenInfo.new(3,Enum.EasingStyle.Quint,Enum.EasingDirection.InOut,0,false,0),{Size = UDim2.new(1,0,0,0)}):Play()
+game.TweenService:Create(Frame_c,TweenInfo.new(3,Enum.EasingStyle.Quint,Enum.EasingDirection.InOut,0,false,0),{Size = UDim2.new(0,300,0,0)}):Play()
 wait(3)
 ScreenGui:Destroy()
