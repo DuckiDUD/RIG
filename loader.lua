@@ -287,6 +287,6 @@ for i = 1,4 do
 end
 
 wait(3.1)
-game.TweenService:Create(Frame,TweenInfo.new(3,Enum.EasingStyle.Quint,Enum.EasingDirection.InOut,0,false,0),{Size = UDim2.new(1,0,0,1)}):Play()
+game.TweenService:Create(Frame,TweenInfo.new(3,Enum.EasingStyle.Quint,Enum.EasingDirection.InOut,0,false,0),{Size = UDim2.new(1,0,0,0)}):Play()
 wait(3)
 ScreenGui:Destroy()
