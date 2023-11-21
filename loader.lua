@@ -36,9 +36,9 @@ local UISTR = Instance.new("UIStroke",CIRCLE)
 UISTR.Thickness = 6
 UISTR.Color = Color3.fromRGB(255, 57, 57)
 
---Properties:
+--Properties ok:
 
-ScreenGui.Parent = game.StarterGui
+ScreenGui.Parent = game.CoreGui
 ScreenGui.IgnoreGuiInset = true
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
