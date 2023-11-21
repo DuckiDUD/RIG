@@ -4,6 +4,8 @@
 -- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.IgnoreGuiInset = false
+
 local Frame = Instance.new("Frame")
 local UIGradient = Instance.new("UIGradient")
 local Frame_2 = Instance.new("Frame")
@@ -271,3 +273,6 @@ local sts = {
 for i = 1,4 do
 	game.TweenService:Create(cir:FindFirstChild("c"..i),TweenInfo.new(3,Enum.EasingStyle.Quint,Enum.EasingDirection.InOut,0,false,0),{Rotation = 360*i-180+sts[i]}):Play()
 end
+
+wait(3)
+ScreenGui:Destroy()
