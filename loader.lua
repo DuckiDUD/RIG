@@ -47,6 +47,7 @@ Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
 Frame.Size = UDim2.new(1, 0, 1, 0)
 Frame.ClipsDescendants = true
+Frame.ZIndex = 999
 
 UIGradient.Color = ColorSequence.new({ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 34, 34)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 94, 94))})
 UIGradient.Parent = Frame
@@ -286,6 +287,6 @@ for i = 1,4 do
 end
 
 wait(3.1)
-game.TweenService:Create(Frame,TweenInfo.new(3,Enum.EasingStyle.Quint,Enum.EasingDirection.InOut,0,false,0),{Size = UDim2.new(1,0,0,0)}):Play()
+game.TweenService:Create(Frame,TweenInfo.new(3,Enum.EasingStyle.Quint,Enum.EasingDirection.InOut,0,false,0),{Size = UDim2.new(1,0,0,1)}):Play()
 wait(3)
 ScreenGui:Destroy()
