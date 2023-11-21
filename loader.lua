@@ -47,7 +47,7 @@ Frame_c.AnchorPoint = Vector2.new(0.5,0.5)
 Frame_c.Position = UDim2.new(0.5,0,0.5,0)
 Frame_c.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame_c.BorderSizePixel = 0
-Frame_c.Size = UDim2.new(0,300,0,300)
+Frame_c.Size = UDim2.new(0,300, 0, 300)
 
 UICorner_c.Parent = Frame_c
 UICorner_c.CornerRadius = UDim.new(0,15)
@@ -57,7 +57,7 @@ Frame.AnchorPoint = Vector2.new(0.5,0.5)
 Frame.Position = UDim2.new(0.5,0,0.5,0)
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame.Size = UDim2.new(0,300,0,300)
+Frame.Size = UDim2.new(0,300, 0, 300)
 Frame.BorderSizePixel = 0
 
 UIGradient.Color = ColorSequence.new({ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 34, 34)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 94, 94))})
