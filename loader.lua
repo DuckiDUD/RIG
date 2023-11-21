@@ -28,6 +28,10 @@ local Line_4 = Instance.new("Frame")
 local Ball_4 = Instance.new("Frame")
 local UICorner_6 = Instance.new("UICorner")
 
+local UISTR = Instance.new("UIStroke",CIRCLE)
+UISTR.Thickness = 6
+UISTR.Color = Color3.fromRGB(255, 57, 57)
+
 --Properties:
 
 ScreenGui.Parent = game.Players.LocalPlayer.PlayerGui
