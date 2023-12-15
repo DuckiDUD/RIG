@@ -1,4 +1,4 @@
-while wait(1) do
+while wait(0.2) do
 	local wrsp = game:GetService("Workspace")
 	local Remote = game.ReplicatedStorage.Network['Pets_SetTargetBulk']
 		
