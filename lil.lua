@@ -1,8 +1,8 @@
-while wait(0.2) do
-	local wrsp = game:GetService("Workspace")
-	local Remote = game.ReplicatedStorage.Network['Pets_SetTargetBulk']
-		
-	local Arguments = {}
-	Remote:FireServer(unpack(Arguments))
-	print("Works")
+local wrsp = game:GetService("Workspace")
+for i, v in pairs(wrsp["__THINGS"].Breakables:GetChildren()) do
+	local hitbox = v:GetChildren()[1]
+	fireclickdetector(hitbox:FindFirstChild("ClickDetector"))
+	if i%10 == 0 then
+		task.wait()
+	end
 end
